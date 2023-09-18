@@ -1,0 +1,230 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  height: 6px;
+  padding: 1.5em;
+  justify-content: center;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* ========= WALLET STARTS ==========  */
+
+.wallet_header {
+  background-color: #333;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  text-align: center;
+}
+.wallet_header p {
+  color: #eb5429;
+  font-weight: 800;
+  font-size: 30px;
+}
+.wallet_header span {
+  color: #dad5d4;
+  font-weight: 200;
+  font-size: 24px;
+}
+.connect_wallet_section {
+  color: white;
+  background-color: #16131b;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.connect_wallet_section p {
+  font-size: 28px;
+  padding-bottom: 18px;
+}
+/* =========WALLTET ENDS ==========  */
+
+/* Container */
+div {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Input fields and labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message */
+div.error {
+  color: #f00;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* =========NAVBAR STARTS ==========  */
+
+header {
+  background-color: #333;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+}
+header .logo {
+  color: #eb5429;
+  font-weight: 800;
+  font-size: 20px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+.nav_link:hover {
+  color: #eb5429;
+}
+
+.nav_link:hover::before {
+  transform: scaleX(1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 999;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  nav li {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 999;
+  }
+  header {
+    padding: 12px;
+  }
+  header .logo {
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  nav li {
+    display: block;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 4px;
+  }
+}
+
+/* =========NAVBAR END ==========  */
